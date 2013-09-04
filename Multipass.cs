@@ -69,7 +69,7 @@ namespace Desk.com
 			{
 				// Provide the RijndaelManaged object with the specified key and IV.
 				aesAlg.Mode = CipherMode.CBC;
-				aesAlg.Padding = PaddingMode.PKCS7;
+				aesAlg.Padding = PaddingMode.Zeros;
 				aesAlg.KeySize = 128;
 				aesAlg.BlockSize = 128;
 				aesAlg.Key = Key;
