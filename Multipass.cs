@@ -8,7 +8,7 @@ using Newtonsoft.Json.Converters;
 
 namespace Desk.com
 {
-	internal class Multipass
+	public class Multipass
 	{
 		protected const string AccountKey = "your sub domain name";
 		protected const string ApiKey = "Your Key here";
@@ -16,10 +16,10 @@ namespace Desk.com
 
 		public class UserData
 		{
-			public string uid;
+			public string uid;  // must be at least 4 Chars
 			public string customer_email;
 			public string customer_name;
-			public string expires;
+			public string expires; // must be in this format yyyy-MM-ddTHH:mm:sszzz
 			public string to;
 		}
 
