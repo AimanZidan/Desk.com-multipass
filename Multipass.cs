@@ -16,7 +16,7 @@ namespace Desk.com
 
 		public class UserData
 		{
-			public string uid;  // must be at least 4 Chars
+			public string uid;  
 			public string customer_email;
 			public string customer_name;
 			public string expires; // must be in this format yyyy-MM-ddTHH:mm:sszzz
